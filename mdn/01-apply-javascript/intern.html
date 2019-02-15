@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <title>Internal JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function createParagraph() {
+        let paragraph = document.createElement('p');
+        paragraph.textContent = 'Button clicked';
+        document.body.appendChild(paragraph);
+      }
+      const buttons = document.querySelectorAll('button');
+
+      for(let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', createParagraph);
+      }
+    });
+  </script>
+</head>
+<body>
+  <button>Click me</button>
+</body>
+</html>
