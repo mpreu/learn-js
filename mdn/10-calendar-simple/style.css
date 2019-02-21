@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: minmax(50px, auto);
+    gap: 3px;
+}
+
+ul li {
+    display: flex;
+    background-color: blue;
+    color: white;
+    padding: 5px; 
+    justify-content: center;
+    align-items: center;      
+}
